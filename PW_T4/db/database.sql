@@ -1,8 +1,8 @@
-CREATE DATABASE `projeto_pw`;
+CREATE DATABASE IF NOT EXISTS `projeto_pw`;
 
 USE `projeto_pw`;
 
-CREATE TABLE `tab_usuarios` (
+CREATE TABLE IF NOT EXISTS `tab_usuarios` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `usuario` varchar(50) NOT NULL,
     `email` varchar(50),
@@ -14,7 +14,7 @@ CREATE TABLE `tab_usuarios` (
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `tab_rotas` (
+CREATE TABLE IF NOT EXISTS `tab_rotas` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `rota` varchar(50) NOT NULL,
     `veiculo` varchar(50) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE `tab_rotas` (
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `tab_mensagens` (
+CREATE TABLE IF NOT EXISTS `tab_mensagens` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `usuario` varchar(50) NOT NULL,
     `rota` varchar(50) NOT NULL,
