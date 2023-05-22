@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'db/connect.php';
 if(isset($_GET['deleteid'])){ 
     $id=$_GET['deleteid']; // pegando o dado deleteid e guardando dentro da variavel id
 

@@ -1,5 +1,5 @@
 <?php
-include 'db/connect.php';
+include '../db/connect.php';
 
 // ***atualizando informações no banco de dados*** //
 $id=$_GET['updateid'];
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){ // quando autorizar, atualizar os dados guardados c
     $result=mysqli_query($con,$sql);
     if ($result) {
         echo "Dados atualizados com sucesso!";
-        header('location:display.php');
+        header('location:../usuarios.php');
     } else{
         die(mysqli_error($con));
     }

@@ -1,5 +1,5 @@
 <?php
-include '../connect.php';
+include '../db/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,10 @@ include '../connect.php';
 </head>
 <body>
     <header class="header" href="header.php">
-        ola
+        Página Inicial<br>
+        <a href="../usuarios.php">Gerenciar Usuários</a><br>
+        <a href="../rotas.php">Gerenciar Rotas</a><br>
+        <a href="../mensagens.php">Gerenciar Mensagens</a>
     </header>
 </body>
 </html>
