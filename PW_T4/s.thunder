@@ -1,0 +1,2 @@
+GET localhost/pw_t4/usuarios
+Content-Type: application/json
